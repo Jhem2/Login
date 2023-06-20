@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Jhem Cookie Official</title>
+
+    <link rel="stylesheet" href="try2.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR CREATION -->
+
+   <header class="header">
+
+    <nav class="navbar">
+
+        <a href="#">Home</a>
+
+        <a href="#">Reviews</a>
+
+        <a href="#">About</a>
+
+        <a href="#">Contact</a>
+
+        <a href="#">Help</a>
+
+    </nav>
+
+    <form action="" class="search-bar">
+
+       <input type="text" placeholder="Search...">
+
+       <button><i class='bx bx-search'></i></button>
+
+    </form>
+
+   </header>
+
+    <!-- LOGIN FORM CREATION -->
+
+    <div class="background"></div>
+
+    <div class="container">
+
+        <div class="item">
+
+            <h2 class="logo"><i class='bx bxl-xing'></i>Jhem Cookie</h2>
+
+            <div class="text-item">
+
+                <h2>Welcome! <br><span>
+
+                    To Our Store
+
+                </span></h2>
+
+                <p>Step inside our amazing cookie store, where sugary dreams come alive!</p>
+
+                <div class="social-icon">
+
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="login-section">
+
+            <div class="form-box login">
+
+                <form action="" onsubmit="login(event)">
+
+                    <h2>Sign In</h2>
+
+                    <div class="input-box">
+
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+
+                        <input id="emailInput" type="email" required>
+
+                        <label>Email</label>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+
+                        <input id="passwordInput" type="password" required>
+
+                        <label>Password</label>
+
+                    </div>
+
+                    <div class="remember-password">
+
+                        <label><input type="checkbox">Remember Me</label>
+
+                        <a href="#">Forget Password</a>
+
+                    </div>
+
+                    <button class="btn">Log In</button>
+
+                    <div class="create-account">
+
+                        <p>Create A New Account? <a href="#" class="register-link">Sign Up</a></p>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="form-box register">
+
+                <form action="" onsubmit="register(event)">
+
+                    <h2>Sign Up</h2>
+
+                    <div class="input-box">
+
+                        <span class="icon"><i class='bx bxs-user'></i></span>
+
+                        <input id="fullNameInput" type="text" required>
+
+                        <label>Full Name</label>
+
+                    </div>
+
+                    <div class="input-box">
+
+<span class="icon"><i class='bx bxs-user'></i></span>
+
+<input id="usernameInput" type="text" required>
+
+<label>Username</label>
+
+</div>
+
+<div class="input-box">
+
+<span class="icon"><i class='bx bxs-envelope'></i></span>
+
+<input id="emailInput" type="email" required>
+
+<label>Email</label>
+
+</div>
+
+<div class="input-box">
+
+<span class="icon"><i class='bx bxs-lock-alt'></i></span>
+
+<input id="passwordInput" type="password" required>
+
+		<label>Password</label></div>
+
+<div class="remember-password">
+
+<label><input type="checkbox" required>I agree with this statement</label>
+
+</div>
+
+<button class="btn">Create Account</button>
+
+<div class="create-account">
+
+<p>Already Have An Account? <a href="#" class="login-link">Sign In</a></p>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+		<script src="try2.js"></script>
+
+<script>
+
+function login(event) {
+
+event.preventDefault(); // Prevent form submission
+
+var email = document.getElementById("emailInput").value;
+
+var password = document.getElementById("passwordInput").value;
+
+        // Here, you can perform the necessary login validation or authentication
+
+        // logic using the entered email and password values
+
+        
+
+        // For simplicity, let's assume the login is successful
+
+        // You can replace this with your actual login logic
+
+        
+
+        // Redirect to the dashboard.html page
+
+        window.location.href = "open.html";
+
+    }
+
+    function register(event) {
+
+        event.preventDefault(); // Prevent form submission
+
+        var fullName = document.getElementById("fullNameInput").value;
+
+        var username = document.getElementById("usernameInput").value;
+
+        var email = document.getElementById("emailInput").value;
+
+        var password = document.getElementById("passwordInput").value;
+
+        
+
+        // Here, you can perform the necessary registration logic
+
+        // and save the user information
+
+        
+
+        // For simplicity, let's assume the registration is successful
+
+        // You can replace this with your actual registration logic
+
+        
+
+        // Redirect to the dashboard.html page
+
+        window.location.href = "";
+
+    }
+
+</script>
+
+</body>
+
+</html>
